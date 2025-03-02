@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>competition – R/Medicine 2024</title>
+<title>Past R/Medicine Conferences – R/Medicine 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,19 +68,94 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-events-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-date","listing-image","listing-playlist"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-events-listing'] = new List('listing-events-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #330033;
+      }
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">R/Medicine 2024</span>
     </a>
   </div>
@@ -89,43 +166,43 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Register.html"> 
+    <a class="nav-link" href="../Register.html"> 
 <span class="menu-text">Register</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Abstracts.html"> 
+    <a class="nav-link" href="../Abstracts.html"> 
 <span class="menu-text">Abstracts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Program.html"> 
+    <a class="nav-link" href="../Program.html"> 
 <span class="menu-text">Program</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./workshops.html"> 
+    <a class="nav-link" href="../workshops.html"> 
 <span class="menu-text">Workshops</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Attend.html"> 
+    <a class="nav-link" href="../Attend.html"> 
 <span class="menu-text">Code of Conduct</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./Competition.html" aria-current="page"> 
+    <a class="nav-link" href="../Competition.html"> 
 <span class="menu-text">Competition</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Contact.html"> 
+    <a class="nav-link" href="../Contact.html"> 
 <span class="menu-text">Contact us</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Events.html"> 
+    <a class="nav-link" href="../Events.html"> 
 <span class="menu-text">Past Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./committees.html"> 
+    <a class="nav-link" href="../committees.html"> 
 <span class="menu-text">Committees</span></a>
   </li>  
 </ul>
@@ -136,100 +213,177 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <h1 class="title">Past R/Medicine Conferences</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#competition" id="toc-competition" class="nav-link active" data-scroll-target="#competition">Competition</a>
-  <ul class="collapse">
-  <li><a href="#the-rmedicine-data-challenge" id="toc-the-rmedicine-data-challenge" class="nav-link" data-scroll-target="#the-rmedicine-data-challenge"><strong>The R/Medicine Data Challenge</strong></a></li>
-  <li><a href="#guidelines" id="toc-guidelines" class="nav-link" data-scroll-target="#guidelines">Guidelines</a></li>
-  <li><a href="#prize-information" id="toc-prize-information" class="nav-link" data-scroll-target="#prize-information">Prize Information</a></li>
-  <li><a href="#faqs-about-data" id="toc-faqs-about-data" class="nav-link" data-scroll-target="#faqs-about-data">FAQs about Data</a></li>
-  <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">Submit:</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
 
-<section id="competition" class="level2">
-<h2 class="anchored" data-anchor-id="competition">Competition</h2>
-<p><strong>How Are Vaccination Rates and Case Rates changing for Measles in 2025?</strong></p>
-<p><br></p>
-<p>The R/Medicine planning committee welcomes your participation in the virtual R/Medicine data challenge. Participants will have from now until May 21st, 2025 to work on submissions for the challenge. There will be 2 prizes: One $200 prize for the Student Division, and One $200 prize for the Pro Division. The quality of analyses/Quarto docs, as well as tables and visualizations will be considered.</p>
-<p>Changing attitudes towards vaccination in the US have significantly lowered childhood measles vaccination rates, as uptake of the recommended two doses of MMR vaccine before entering school has frequently fallen below the 95% recommended for community immunity.</p>
-<section id="the-rmedicine-data-challenge" class="level3">
-<h3 class="anchored" data-anchor-id="the-rmedicine-data-challenge"><strong>The R/Medicine Data Challenge</strong></h3>
-<p>In this data challenge, you will analyze MMR vacccination rates over time and by geographical area, as well as measles case rates and complications.</p>
-<p>We ask that all analyses be done and submitted as Quarto documents. Participants can submit as an individual or as part of a team (but not both). The maximum team size is 3. Your goal will be to tell a data story about what is happening with measles immunity and outcomes in the US and the world in 2025.</p>
-<p>We encourage you to use any and all of the public datasets available at: <a href="https://github.com/fbranda/measles" class="uri">https://github.com/fbranda/measles</a>. We encourage you to explore any of the csv files at the top level, as well as those in the <code>measles/USA/data/</code> folder. Note that a lot of the contemporaneous files are updated each week, so be sure to use the latest data in your final submission.</p>
-<p>As this is an ongoing concern, datasets are being collected and updated in real time, ad we encourage you to document trends, use interactive formats like ggplotly and shiny-live, and to consider forecasting the future with tools like the {forecast} and (tidyverts} packages. One good reference for forecasting from Rob Hyndman can be found <a href="https://otexts.com/fpp3/">here</a>.</p>
-<p>In addition to the provided datasets on this Github site, you may request to use additional publicly available data in your submission by submitting a request (with the dataset) by May 1st, 2024 at 5:00PM EST. If approved, the dataset will be made available to all participants.</p>
-<p>You will be evaluated by judges based on the relevance, completeness, and quality of your submission.</p>
-<p>Judges include:</p>
-<p>Raymond Balise, PhD, University of Miami</p>
-<p>Peter Higgins, MD, PhD, MSc, University of Michigan</p>
-<p>Bryan P. Mayfield, PharmD, MS, Precision Analytical</p>
-<section id="example-topics" class="level4">
-<h4 class="anchored" data-anchor-id="example-topics">Example Topics</h4>
-<ul>
-<li><p>What is the growth rate of measles cases in the US vs Europe?</p></li>
-<li><p>Are there particular counties or states at risk due to low vaccination rates?</p></li>
-<li><p>How are vaccination rates changing over time?</p></li>
-<li><p>What is your projection for the number of measles cases (and complications) in 2026?</p></li>
+
+<div id="listing-events-listing" class="quarto-listing quarto-listing-container-custom">
+
+<ul class="list" style="list-style-type:none">
+
+<div class="list-container">
+
+  <div class="item-container" data-index="0" data-listing-date-sort="1685937600000">
+
+  <li data-index="1" data-listing-date-sort="1685937600000">
+
+  <div id="itemImage">
+    <a href="https://events.linuxfoundation.org/r-medicine/" class="listing-image">
+      <img src="./images/events/2023.png" width="300" height="300">
+    </a>
+  </div>
+  
+    <div class="listing-links">
+    <p class="no-anchor listing-title" style="margin-bottom: 3px;">R/Medicine 2023</p>
+    <a href="https://events.linuxfoundation.org/r-medicine/" target="_blank" class="listing-url button">Event Website</a>
+    <a href="https://www.youtube.com/playlist?list=PL4IzsxWztPdlpR3NqGzUI01M4_jqzIWqo" target="_blank" class="listing-url button">YouTube Playlist</a>
+  </div>
+  
+  </li>
+  
+  </div>
+    
+
+  <div class="item-container" data-index="2" data-listing-date-sort="1661227200000">
+
+  <li data-index="3" data-listing-date-sort="1661227200000">
+
+  <div id="itemImage">
+    <a href="https://events.linuxfoundation.org/archive/2022/r-medicine/" class="listing-image">
+      <img src="./images/events/2022.png" width="300" height="300">
+    </a>
+  </div>
+  
+    <div class="listing-links">
+    <p class="no-anchor listing-title" style="margin-bottom: 3px;">R/Medicine 2022</p>
+    <a href="https://events.linuxfoundation.org/archive/2022/r-medicine/" target="_blank" class="listing-url button">Event Website</a>
+    <a href="https://www.youtube.com/playlist?list=PL4IzsxWztPdmSeucR67EH_8_hzldqYZX4" target="_blank" class="listing-url button">YouTube Playlist</a>
+  </div>
+  
+  </li>
+  
+  </div>
+    
+
+  <div class="item-container" data-index="4" data-listing-date-sort="1629777600000">
+
+  <li data-index="5" data-listing-date-sort="1629777600000">
+
+  <div id="itemImage">
+    <a href="https://r-medicine-2021.netlify.app/" class="listing-image">
+      <img src="./images/events/2021.png" width="300" height="300">
+    </a>
+  </div>
+  
+    <div class="listing-links">
+    <p class="no-anchor listing-title" style="margin-bottom: 3px;">R/Medicine 2021</p>
+    <a href="https://r-medicine-2021.netlify.app/" target="_blank" class="listing-url button">Event Website</a>
+    <a href="https://www.youtube.com/watch?v=sM9GEAm6Uew&amp;list=PL4IzsxWztPdmHxCpS_c2l_jbMfrywWciZ" target="_blank" class="listing-url button">YouTube Playlist</a>
+  </div>
+  
+  </li>
+  
+  </div>
+    
+
+  <div class="item-container" data-index="6" data-listing-date-sort="1598500800000">
+
+  <li data-index="7" data-listing-date-sort="1598500800000">
+
+  <div id="itemImage">
+    <a href="https://events.linuxfoundation.org/archive/2020/r-medicine/" class="listing-image">
+      <img src="./images/events/2020.png" width="300" height="300">
+    </a>
+  </div>
+  
+    <div class="listing-links">
+    <p class="no-anchor listing-title" style="margin-bottom: 3px;">R/Medicine 2020</p>
+    <a href="https://events.linuxfoundation.org/archive/2020/r-medicine/" target="_blank" class="listing-url button">Event Website</a>
+    <a href="https://www.youtube.com/watch?v=vE-oMxWYgIo&amp;list=PL4IzsxWztPdljYo7uE5G_R2PtYw3fUReo" target="_blank" class="listing-url button">YouTube Playlist</a>
+  </div>
+  
+  </li>
+  
+  </div>
+    
+
+  <div class="item-container" data-index="8" data-listing-date-sort="1568260800000">
+
+  <li data-index="9" data-listing-date-sort="1568260800000">
+
+  <div id="itemImage">
+    <a href="https://r-medicine-2019.netlify.app/" class="listing-image">
+      <img src="./images/events/2019.png" width="300" height="300">
+    </a>
+  </div>
+  
+    <div class="listing-links">
+    <p class="no-anchor listing-title" style="margin-bottom: 3px;">R/Medicine 2019</p>
+    <a href="https://r-medicine-2019.netlify.app/" target="_blank" class="listing-url button">Event Website</a>
+    <a href="https://www.youtube.com/@RConsortium" target="_blank" class="listing-url button">YouTube Playlist</a>
+  </div>
+  
+  </li>
+  
+  </div>
+    
+
+  <div class="item-container" data-index="10" data-listing-date-sort="1536292800000">
+
+  <li data-index="11" data-listing-date-sort="1536292800000">
+
+  <div id="itemImage">
+    <a href="https://r-medicine-2018.netlify.app/" class="listing-image">
+      <img src="./images/events/2018.png" width="300" height="300">
+    </a>
+  </div>
+  
+    <div class="listing-links">
+    <p class="no-anchor listing-title" style="margin-bottom: 3px;">R/Medicine 2018</p>
+    <a href="https://r-medicine-2018.netlify.app/" target="_blank" class="listing-url button">Event Website</a>
+    <a href="https://www.youtube.com/@RConsortium" target="_blank" class="listing-url button">YouTube Playlist</a>
+  </div>
+  
+  </li>
+  
+  </div>
+    
+
+</div>
+
 </ul>
-</section>
-</section>
-<section id="guidelines" class="level3">
-<h3 class="anchored" data-anchor-id="guidelines">Guidelines</h3>
-<p><strong>When:</strong> Now - May 21st, 2024</p>
-<p><strong>Where:</strong> The R/Medicine data challenge is entirely virtual, with information and rules of the challenge available on this website. Updates will be posted on this website.</p>
-<p><strong>Who you are:</strong> We welcome any participants over age 18, especially undergraduate students, graduate students, and early professional data scientists and biostatisticians. Analysts based in academic institutions, government statistical offices, think tanks, policy labs, and community organizations are encouraged to participate.</p>
-<p><strong>What topics you can explore:</strong> Participants can analyze the linked measles data sets in tandem with with any other related publicly available data submitted for approval before May 1st, 2024.</p>
-<p><strong>Submissions and evaluation:</strong> Participants will conduct their analyses and submit a short project narrative that describes the research question, analytic approach, and key findings. We encourage participants to find creative ways to incorporate tables, visualizations, and other aspects of data storytelling to create a compelling narrative. In addition to their completed analysis with the indicators they used, participants will be asked to submit documentation describing each step of their process. The documentation should be detailed enough as to make the project fully replicable. The narrative, methods, organization, and documentation of each participant’s project will be evaluated for relevance, completeness, and quality. More information on evaluation will be added to the FAQs section at the bottom of this page.</p>
-</section>
-<section id="prize-information" class="level3">
-<h3 class="anchored" data-anchor-id="prize-information">Prize Information</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Selection</th>
-<th>Prize</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Best Overall Analysis/Quarto Doc, Student Division</td>
-<td>$200 Prize</td>
-</tr>
-<tr class="even">
-<td>Best Overall Analysis/Quarto Doc, Student Division</td>
-<td>$200 Prize</td>
-</tr>
-</tbody>
-</table>
-<p>Finalists will be <strong>required</strong> to present their project at the R/Medicine conference (can be prerecorded) on Friday afternoon in our closing session for the prizewinners on June 13, 2024.</p>
-</section>
-<section id="faqs-about-data" class="level3">
-<h3 class="anchored" data-anchor-id="faqs-about-data">FAQs about Data</h3>
-<p>(TBD)</p>
-</section>
-<section id="submit" class="level3">
-<h3 class="anchored" data-anchor-id="submit">Submit:</h3>
-<p><a href="https://docs.google.com/forms/d/14eRHDwQ5vBAKB8UXNzsOYfXm0t9OMeZnaRRYaJequPI/viewform?edit_requested=true">Fill out this form</a></p>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 
 
-</section>
-</section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
